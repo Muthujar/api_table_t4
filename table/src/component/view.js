@@ -1,13 +1,10 @@
 import React from "react";
-import { Table } from "./table";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Router, useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function View() {
   let params = useParams();
-  //   const navigate = useNavigate();
 
   const [userDetails, setUserDetails] = useState([]);
   useEffect(() => {

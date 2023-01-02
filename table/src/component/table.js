@@ -1,14 +1,7 @@
-// import { Button } from "bootstrap";
 import React from "react";
-import { DefaultContext } from "react-icons/lib";
-import { MdDelete } from "react-icons/md";
-import { useParams } from "react-router-dom";
-// import axios from "axios";
-// import { alert } from "react-alert";
-// import Button from "./button";
+
 import "./table.css";
 import { useNavigate } from "react-router-dom";
-import View from "./view";
 
 function Table({ data, deleteData }) {
   let navigate = useNavigate();
@@ -16,8 +9,7 @@ function Table({ data, deleteData }) {
   const router = (id) => {
     navigate(`/view/${id}`);
   };
-  // console.log(router, "router");
-  // console.log("alert", data);
+
   return (
     <div className="bg-white ">
       <table className=" tables text-center  ">
@@ -44,7 +36,6 @@ function Table({ data, deleteData }) {
                   {list.address.city},{list.address.zipcode}
                 </td>
                 <td className="d-flex">
-                  {/* <Button /> */}
                   <button onClick={() => router(id)}> View</button>
 
                   <button onClick={() => deleteData(id)}> delete</button>
