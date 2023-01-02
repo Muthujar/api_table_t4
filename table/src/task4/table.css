@@ -1,0 +1,11 @@
+.tables {
+  background-color: rgb(198, 65, 65);
+  margin-top: 40px;
+
+  margin-left: 100px;
+}
+.tables,
+th,
+td {
+  border: 1px solid;
+}
